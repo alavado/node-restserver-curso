@@ -15,3 +15,9 @@ else {
   urlDB = process.env.MONGO_URI
 }
 process.env.URLDB = urlDB
+
+// ==========================================
+// JWT
+// ==========================================
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30
+process.env.SEED = process.env.CADUCIDAD_TOKEN || 'este-es-el-seed-desarrollo'
